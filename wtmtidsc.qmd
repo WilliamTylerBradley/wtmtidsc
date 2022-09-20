@@ -1,0 +1,189 @@
+---
+title: "What They Missed Teaching in Data Science Class"
+author: "Tyler Bradley"
+format: 
+  revealjs:
+    incremental: true
+    menu: false
+    theme: custom.scss
+editor: source
+---
+
+## Agenda
+
+::: columns
+::: column
+What they missed
+
+-   Other People
+
+-   Messy Data
+
+-   Career Progression
+:::
+
+::: column
+::: fragment
+Why these are missed
+:::
+
+-   Time
+
+-   Complexity
+:::
+:::
+
+::: notes
+
+
+- These subjects tend to be what new grads complain the most about, and so the most common complains about new grads.
+
+- When school runs on four month semester schedule with a ton of topics to cover, anything that needs a lot of time or complexity either gets dropped or can't be done. As we cover the 'What they missed' topics, I'll bring up each of these issues for why they weren't covered.
+:::
+
+## Other People
+
+Team mates
+
+-   Be polite
+
+-   Be supportive
+
+::: notes
+How to working with other people is definitely one of the biggest complaints about new grads (but not just new grads though). I do think schools are incorporating more group work, which helps, but doesn't resolve these issues
+
+- When you're working 40 hours or more a week with someone, that's a lot different than the 4 hours a week for a class. I think a lot of people get away with being kind of a jerk in school because new teams cycle through so fast. I definitely used to think I would pick working with people that were a little mean but good at their jobs over nice people that weren't. But I've since changed my mind by being in both those situations. 4 years over 4 months is a huge time difference, especially when it comes to cutting your coworkers any slack. General rule of thumb I've heard is "Don't have to be friends, but can't be enemies."
+
+-   One big difference between school and work is that people drop out of school faster than work. So people will have more difficult situations outside of work than school (on average). You'll run into this sometime.
+:::
+
+## Other People
+
+End Users
+
+-   End goals
+
+-   Communication
+
+::: notes
+Schools tend to have rubrics for projects (which I like a lot). Work can have requirements documents, but those are a lot looser in restrictions and staying consistent.
+
+- Story on model not moving to production for unforeseen issue. ED admissions on the weekend.
+
+- Phone vs email, attitude, lingo for non-programmers
+:::
+
+## Messy Data
+
+Incoming data
+
+-   New values
+
+-   System drops
+
+::: notes
+School projects are getting better at working with messy data. But they still have to present the solutions easily.
+
+-   new values (including NULL), future proofing your code. maybe see new data in a hold out data set
+
+-   Explain correlated variables and PCA. If small part breaks, then the whole thing does but there's no way to tell if it was valuable.
+:::
+
+## Messy Data
+
+SQL
+
+-   Product returns
+
+::: notes
+A lot of schools teach the basics.
+
+Asking for a 'big table' is a big red flag.
+
+Might be weird seeing this for people that use SQL a lot.
+:::
+
+## Messy Data
+
+| Order ID | Item ID | Customer ID |    Costs |       Date |
+|---------:|--------:|------------:|---------:|-----------:|
+| 15624967 | 4366342 |       27225 |  \$12.42 | 12/01/2021 |
+| 65354833 | 4366342 |       27225 | -\$12.42 | 01/10/2022 |
+
+: Orders
+
+::: notes
+Explain CLV
+
+If caluating CLV, for 2021 this person is 12.42, for 2022, this person is a -12.42.
+
+For this most part, this cancels out. But only on average.
+:::
+
+## Messy Data
+
+SQL
+
+-   Product returns
+
+-   Address updates
+
+::: notes
+:::
+
+## Messy Data
+
+| Custom ID | Address ID | Start Date |   End Date |
+|----------:|-----------:|-----------:|-----------:|
+|      7542 |         12 | 01/01/2021 | 12/31/2021 |
+|      7542 |         34 | 01/01/2022 | 12/31/9999 |
+
+: Customer Addresses
+
+::: notes
+-   For connecting CLV, you have to pull historical data. Sometimes have an IsActive indicator you have to ignore.
+:::
+
+## Career Progression
+
+What to do next
+
+-   New skills and technology
+
+-   Career path
+
+::: notes
+-   For five years of experience, there's a big difference between five different years and the same year repeated five times. Step-wise logistic regression.
+
+-   Look around at network and see what other people are doing. But there are a lot of biases here.
+
+-   Management, Individual Contributor, Consulting
+:::
+
+## Career Progression
+
+How to get there
+
+-   Make sure to keep progressing
+
+-   Learn to teach yourself
+
+::: notes
+-   Study skills class should have been mandatory for seniors
+:::
+
+## Resources
+
+-   Askamanager.com
+
+-   Social Media (with accepting its limitations)
+
+-   Coworkers
+
+## Main takeaways
+
+Working has different time scales/complexity than school
+
+This leads to a change in priority and tasks that aren't taught
+
+So it's learned on the job

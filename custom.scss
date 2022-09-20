@@ -1,0 +1,13 @@
+/*-- scss:defaults --*/
+
+// use default as the base
+$theme: "default" !default;
+
+$body-bg: #f8f9fe !default;
+$body-color: #021448 !default;
+
+
+/*-- scss:rules --*/
+.reveal h2 {
+  margin-bottom: 5%;
+}
